@@ -1,0 +1,250 @@
+/* 
+    Date: 07 April 2021
+    Author: Kyra Elyse Alday
+    Topic: Assignment 01 - Sorrento by the Sea
+    Description: Website Style Sheet
+*/
+
+/* ---------- WHOLE PAGE ---------- */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- SECTIONS ---------- */
+body
+{
+    font-family: Helvetica, Calibri, sans-serif;
+}
+
+footer
+{
+    background-color: #2a3439;
+    color: #DDDDDD;
+    text-align: center;
+    flex-shrink: 0;
+    padding: 1em;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+nav
+{
+    padding: 1em;
+    background-color: #2a3439;
+}
+
+nav ul
+{
+    display: flex;
+    list-style-type: none;            /* removes the bullets */
+    justify-content: space-around;
+}
+
+nav a
+{
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------- HEADINGS ---------- */
+h1, h2, h3, h4, h5, h6, p, dt, dd
+{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+p, dt, dd
+{
+    line-height: 150%;
+}
+
+h1
+{
+    color: #0B6087;
+    font-size: 36px;
+}
+
+h2
+{
+    color: #D41C36;
+    font-size: 24px;
+}
+
+ul
+{
+    list-style-position: inside;
+}
+
+dt, dd
+{
+    font-style: italic;
+}
+
+em
+{
+    color: #D41C36;
+}
+
+/* ---------- LINKS ---------- */
+section a
+{
+    color: #0693D4;
+}
+
+section a:visited
+{
+    color: #D41C36;
+}
+
+a:hover
+{
+    color: #0693D4;
+    text-decoration: none;
+}
+
+/* ---------- CLASSES & IDs ---------- */
+#column1, #column2
+{
+    width: 600px;
+}
+
+#home
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#heading
+{
+    /* fix highlights heading */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#content
+{
+    border: 1px dotted #D41C36;
+    padding: 1em;
+}
+
+.wrapper
+{
+    width: 1000px;
+    margin: auto;
+}
+
+/* Current Page */
+.current
+{
+    color: #D41C36;
+}
+
+/* Images */
+.imagesAbout
+{
+    display: flex;
+    padding: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.imagesMain
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* ---------- FORM ---------- */
+.labelText
+ {
+     display: inline-block;
+     width: 150px;
+ }
+
+form p
+ {
+     display: flex;
+ }
+
+ label
+ {
+     width: 150px;
+ }
+
+ button
+ {
+     padding: 5px;    
+ }
+
+ /* Error Messages */
+.error
+ {
+     margin-left: 1em;
+     color: coral;
+ }
+
+
+/* ---------- SLIDESHOW ---------- */
+#slideshowContainer
+ {
+     position: relative;
+     top: 0;
+     left: 0;
+     width: 640px;
+     height: 334px;
+     margin: auto;
+     text-align: center;
+     background-color: rgba(11, 96, 135, 1);
+ }
+
+ #dotContainer
+ {
+    position: absolute;
+    top: 575px;
+    width: 640px;
+    text-align: center;
+ }
+
+ .prev
+ {
+     position: absolute;
+     left: 0;
+     top: 150px;
+ }
+
+ .next
+ {
+     position: absolute;
+     right: 0;
+     top: 150px;
+ }
+
+ .prev, .next
+ {
+     font-size: 40px;
+     padding-left: 2px;
+     padding-right: 2px;
+     padding-bottom: 3px;
+     background-color: rgba(255,255,255,0.5);
+
+     cursor: pointer;
+ }
+
+ .dot
+ {
+     font-size: 30px;
+     padding: 5px;
+     margin-left: 5px;
+     margin-right: 5px;
+     cursor: pointer;
+     display: inline-block;
+ }
+
+ .active
+ {
+     color: #447FA9;
+ }

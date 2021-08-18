@@ -1,0 +1,124 @@
+<!-- 
+    Date: 08 April 2021
+    Author: Kyra Elyse Alday
+    Topic: Assignment 01 - Sorrento by the Sea
+    Description: About Us Page (about.html)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- Style Sheet -->
+    <link href="sorrento-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="wrapper">
+        <a href="index.html">
+            <img src="ICTWEB431_AE_Pro_1of2_SR1/logo.png" alt="Sorrento Logo">
+        </a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="wrapper">
+            <!-- move the current class to change the colour of hyperlink -->
+            <li><a href="index.html">Home</a></li>
+            <li><a class="current" href="about.html">About Us</a></li>
+            <li><a href="apartment.html">Apartments</a></li>
+            <li><a href="highlights.html">Local Highlights</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Heading -->
+    <section id="heading">
+        <h1>About Us</h1>
+    </section>
+
+    <!-- Main Section -->
+    <main id="home">
+        <section id="column1">
+            <p>On the Mornington Peninsula (one hour from Melbourne) next door to Portsea.</p>
+            <p>Our apartments are a lazy 10-minute walk from the relaxed <a href="highlights.html">township of
+                    Sorrento</a> that offers restaurants,
+                cafes, a chemist, a supermarket, a butcher and lots more. It is located in a quiet avenue, just 4 houses
+                from the beach. It is in easy walking distance of the ocean beaches and surf.</p>
+            <p> Your private <a href="apartment.html">luxury apartments</a> consists of a spacious living area with
+                leather lounge suite overlooking
+                a sun drenched, tree-filled private garden. </p>
+            <p> A separate kitchenette has everything you need to make your stay relaxed and comfortable. A queen sized
+                bedroom and an amazing bathroom complete with free standing black bath entices you to relax and unwind.
+            </p>
+            <p> Two TVs are sure to make everyone happy! An undercover BBQ area with seating offers plenty of space to
+                stretch out and enjoy that cup of freshly brewed coffee or a glass of wine.</p>
+            <p>This is the perfect place for a home away from home.</p>
+        </section>
+
+        <section id="column2">
+
+            <!-- Slideshow -->
+            <div id="slideshowContainer">
+                <div class="slides">
+                    <img src="ICTWEB431_AE_Pro_1of2_SR1/back_beach.jpg" alt="Back Beach">
+                </div>
+
+
+                <!-- Arrow Buttons -->
+                <span class="prev">&#10094;</span>
+                <span class="next">&#10095;</span>
+
+            </div>
+
+            <!-- Dots -->
+            <div id="dotContainer">
+                <p class="description">Back Beach</p>
+                <p id="dots"></p>
+            </div>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Social Media Bar -->
+        <nav>
+            <ul class=" wrapper">
+                <li><a href="http://facebook.com/" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/facebook_small.png" alt="Facebook Link" title="Facebook"></a>
+                </li>
+                <li><a href="http://instagram.com/" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/instagram_small.png" alt="Instagram Link"
+                            title="Instagram"></a>
+                </li>
+                <li><a href="https://twitter.com/?lang=en-au" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/twitter_small.png" alt="Twitter Link" title="Twitter"></a>
+                </li>
+                <li><a href="https://youtube.com/" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/youtube-variation_small.png" alt="YouTube Link"
+                            title="YouTube"></a></li>
+                <li><a href="https://www.paypal.com/au/home" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/paypal_small.png" alt="PayPal Link" title="PayPal"></a></li>
+            </ul>
+        </nav>
+
+        <div class="wrapper">
+            &copy; Sorrento by the Sea - 0435 123 456
+        </div>
+
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="scripts/about.js"></script>
+
+</body>
+
+</html>

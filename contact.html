@@ -1,0 +1,154 @@
+<!-- 
+    Date: 08 April 2021
+    Author: Kyra Elyse Alday
+    Topic: Assignment 01 - Sorrento by the Sea
+    Description: Contact Us Page (contact.html)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <!-- Style Sheet -->
+    <link href="sorrento-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="wrapper">
+        <a href="index.html">
+            <img src="ICTWEB431_AE_Pro_1of2_SR1/logo.png" alt="Sorrento Logo">
+        </a>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul class="wrapper">
+            <!-- move the current class to change the colour of hyperlink -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="apartment.html">Apartments</a></li>
+            <li><a href="highlights.html">Local Highlights</a></li>
+            <li><a class="current" href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Section -->
+    <section id="heading">
+        <h1>Contact Us</h1>
+    </section>
+    
+    <main id="home">
+        <section id="column1">
+            <h3>Phone Number</h3>
+            <p>0435 123 456</p>
+
+            <h3>Address</h3>
+            <p>
+                42 Holyrood Avenue
+                <br>
+                Sorrento VIC 3943
+            </p>
+
+            <br>
+
+            <h2>Enquiry Form</h2>
+            <form action="test.php" novalidate>
+                <!-- First Name -->
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <span class="error"></span>
+                </p>
+                <!-- Last Name -->
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName">
+                    <span class="error"></span>
+                </p>
+                <!-- Email -->
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error"></span>
+                </p>
+                <!-- Mobile -->
+                <p>
+                    <label for="mobile">Mobile:</label>
+                    <input type="text" id="mobile" name="mobile">
+                    <span class="error"></span>
+                </p>
+                <!-- Question -->
+                <p>
+                    <label for="question">Question:</label>
+                    <textarea name="question" id="question"></textarea>
+                    <span class="error"></span>
+                </p>
+                <!-- Submit Button -->
+                <p>
+                    <button type="submit" id="send">Send</button>
+                </p>
+
+            </form>
+
+        </section>
+
+        <section id="column2">
+
+            <h2>Map</h2>
+            <img src="ICTWEB431_AE_Pro_1of2_SR1/map.png" alt="Sorrento Map" title="Map of Sorrento" width="550">
+
+            <h2>How to get to Sorrento by the Sea </h2>
+            <p> It is easy to find. From Melbourne, take the Monash Freeway, connect onto the Eastlink heading for
+                Portsea, then onto the Peninsula link to Sorrento. </p>
+            <p> Another option is the scenic drive around the beach. Although longer, it allows you to experience the
+                coastline from Port Melbourne to Sorrento. </p>
+            <p> If you choose to come across on the Queenscliff/Sorrento Ferry, it is only a 2 minute drive from the
+                Ferry Depot. </p>
+            <p>If you are a foot passenger we are happy to meet you at the Sorrento ferry at. Just phone us on <em>0435
+                    123 456</em> as you arrive.</p>
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <!-- Social Media Bar -->
+        <nav>
+            <ul class=" wrapper">
+                <li><a href="http://facebook.com/" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/facebook_small.png" alt="Facebook Link" title="Facebook"></a>
+                </li>
+                <li><a href="http://instagram.com/" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/instagram_small.png" alt="Instagram Link"
+                            title="Instagram"></a>
+                </li>
+                <li><a href="https://twitter.com/?lang=en-au" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/twitter_small.png" alt="Twitter Link" title="Twitter"></a>
+                </li>
+                <li><a href="https://youtube.com/" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/youtube-variation_small.png" alt="YouTube Link"
+                            title="YouTube"></a></li>
+                <li><a href="https://www.paypal.com/au/home" target="_blank"><img
+                            src="ICTWEB431_AE_Pro_1of2_SR1/paypal_small.png" alt="PayPal Link" title="PayPal"></a></li>
+            </ul>
+        </nav>
+
+        <div class="wrapper">
+            &copy; Sorrento by the Sea - 0435 123 456
+        </div>
+
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="scripts/contact.js"></script>
+
+</body>
+
+</html>
